@@ -5,7 +5,7 @@
 #                                                           #
 # This file is part of Project Alpha, a PHP rewrite of the  #
 # NSWJLPS system. This project is designed to run on any    #
-# standard implentation of PHP with SQLite.                 #
+# standard implementation of PHP with SQLite.               #
 #                                                           #
 # Do not copy or distribute any portion of this file with   #
 # permission from the original authors.                     #
