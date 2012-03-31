@@ -49,23 +49,45 @@ class sqlite_db {
         $db = null;
     }
 
-    public function dump_table($table){
+    public function query($q){
         $db = $this->db;
-        $query = $db->query("select * from " . $table);
+        $query = $db->query($q);
         $result = $query->fetchall(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function tables(){
+        $result = $this->query("SELECT name FROM sqlite_master WHERE type = 'table' AND name <> 'sqlite_sequence'");
+        $array = null;
+        foreach($result as $row){
+            foreach($row as $field=>$val){
+                $array[] = $val;
+            }
+        }
+        return $array;
+    }
+
+    public function dump_table($table){
+        $result = $this->query("SELECT * FROM " . $table);
         echo "<h1>" . $table . "</h1>";
         echo "<table>";
-        foreach($result[0] as $key=>$val){
-                echo "<th>" . $key . "</th>";
+        foreach($result[0] as $field=>$val){
+                echo "<th>" . $field . "</th>";
         }
         foreach($result as $row){
             echo "<tr>";
-            foreach($row as $key=>$val){
+            foreach($row as $field=>$val){
                 echo "<td>" . $val . "</td>";
             }
             echo "</tr>";
         }
         echo "</table>";
+    }
+
+    public function dump_all_tables(){
+        foreach($this->tables() as $table){
+            $this->dump_table($table);
+        }
     }
 }
 ?>
