@@ -14,7 +14,7 @@
 # Reynolds & Anthony Wales                                  #
 #                                                           #
 # Author: Blair Hudson                                      #
-# Last Modified: 4-4-2012                                  #
+# Last Modified: 5-4-2012                                   #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 class session {
@@ -24,12 +24,19 @@ class session {
 
     public function login(){
         $_SESSION["authd"] = true;
-        echo "Logged in";
     }
 
     public function logout(){
-        unset($_SESSION["authd"]);
-        echo "Logged out";
+        session_unset();
+        session_destroy();
+    }
+
+    public function authd(){
+        if(isset($_SESSION["authd"])){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 ?>
