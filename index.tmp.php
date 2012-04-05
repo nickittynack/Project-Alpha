@@ -15,18 +15,10 @@
 # Reynolds & Anthony Wales                                  #
 #                                                           #
 # Author: Blair Hudson                                      #
-# Last Modified: 4-4-2012                                   #
+# Last Modified: 5-4-2012                                   #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-include("classes/session.class.php");
-
-$session = new session();
-
-if(isset($_SESSION["authd"])){
-	$session->logout();
-} else {
-	$session->login();
-}
+echo "Nothing to see yet.";
 
 exit();
 ?>
