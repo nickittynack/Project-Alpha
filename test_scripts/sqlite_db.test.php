@@ -14,7 +14,7 @@
 # Reynolds & Anthony Wales                                  #
 #                                                           #
 # Author: Blair Hudson                                      #
-# Last Modified: 31-3-2012                                  #
+# Last Modified: 5-4-2012                                   #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # This file demonstrates how to use sqlite_db.class.php to
@@ -28,17 +28,23 @@ $db->connect(); # Connect to the database
 $db->dump_all_tables(); # Dump the entire database
 
 /*
+
 # This code shows how to dump all the tables in the databse.
 # It does the same thing as the dump_all_tables() function
 # used above.
+
 foreach($db->tables() as $table){ # Return an array with the table names
     $db->dump_table($table); # Dump the specified table
 }
+
 */
+
 /*
+
 # This code shows how to perform a custom query and manipulate
 # its return value. It does the same thing as the dump_table()
 # function used above.
+
 $result = $db->query("SELECT * FROM Criminal"); # Perform a custom query
 echo "<h1>Criminal</h1>";
 echo "<table>";
@@ -53,6 +59,7 @@ foreach($result as $row){
     echo "</tr>";
 }
 echo "</table>";
+
 */
 
 $db->disconnect(); # Disconnect from the database
