@@ -17,33 +17,33 @@
 
 # The base directory where NSWJLPS is installed. e.g. If the
 # URL is "http://www.nswjlps.com/nswjlps", then the base
-# directory is "/nswjlps/". Be sure to start and finish the
+# directory is "/nswjlps/". Be sure to finish the
 # directory name with forward slashes. All following paths
 # must be relative to this directory.
-$base_directory = "/project-alpha/"
+$base_directory = "project-alpha/";
 
 # The path to the SQLite DB.
-$db_file = "nswjlps.sqlite"
+$db_file = "nswjlps.sqlite";
 
 # The path to the page templates.
-$templates = "page_template/"
+$templates = "page_template/";
 
 # The path where all uploaded images are stored.
-$uploads = "page_resources/uploads/"
+$uploads = "page_resources/uploads/";
 
 # The path for storing all CSS files.
-$css = "page_resources/css/"
+$css = "page_resources/css/";
 
 # The path for storing all UI images.
-$images = "page_resources/images/"
+$images = "page_resources/images/";
 
 # The directory for storing all JavaScript files.
-$js = "page_resources/js/"
+$js = "page_resources/js/";
 
 # Directory for storing PHP classes.
-$classes = "classes/"
+$classes = "classes/";
 
 # Directory for storing PHP function scripts.
-$functions = "functions/"
+$functions = "functions/";
 
 ?>
