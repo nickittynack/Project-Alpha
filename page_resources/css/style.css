@@ -331,7 +331,7 @@ table.position
 {
   width: 66px;
   height: 66px;
-  background-image: url('images/sheet_s.png');
+  background-image: url('../images/sheet_s.png');
 }
 
 .art-sheet-tl
@@ -367,7 +367,7 @@ table.position
   left: 33px;
   right: 33px;
   height: 66px;
-  background-image: url('images/sheet_h.png');
+  background-image: url('../images/sheet_h.png');
 }
 
 .art-sheet-tc
@@ -387,7 +387,7 @@ table.position
   top: 33px;
   bottom: 33px;
   width: 66px;
-  background-image: url('images/sheet_v.png');
+  background-image: url('../images/sheet_v.png');
 }
 
 .art-sheet-cr
@@ -452,7 +452,7 @@ div.art-header-jpeg
   left:-50%;
   width: 992px;
   height: 125px;
-  background-image: url('images/newHeader3.png');
+  background-image: url('../images/newHeader3.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -575,7 +575,7 @@ h2.art-logo-text a:hover
   top: 0;
   background: none;
   min-height: 0;
-  background-image: url('images/spacer.gif');
+  background-image: url('../images/spacer.gif');
   padding: 10px 30px 30px 30px;
   margin: -10px 0 0 -30px;
 }
@@ -637,7 +637,7 @@ h2.art-logo-text a:hover
   z-index: -1;
   top: 0;
   height: 100%;
-  background-image: url('images/nav.png');
+  background-image: url('../images/nav.png');
 }
 
 .art-nav-l
@@ -682,7 +682,7 @@ h2.art-logo-text a:hover
   top: 0;
   z-index: -1;
   height: 97px;
-  background-image: url('images/menuitem.png');
+  background-image: url('../images/menuitem.png');
 }
 
 .art-hmenu a .l
@@ -759,7 +759,7 @@ h2.art-logo-text a:hover
   margin:0 auto;
   width: 1px;
   height: 29px;
-  background-image: url('images/menuseparator.png');
+  background-image: url('../images/menuseparator.png');
 }
 /* end MenuSeparator */
 
@@ -771,7 +771,7 @@ h2.art-logo-text a:hover
   height: 38px;
   width: 180px;
   overflow: hidden;
-  background-image: url('images/subitem.png');
+  background-image: url('../images/subitem.png');
   background-position: left top;
   background-repeat: repeat-x;
   border-width: 1px;
@@ -891,7 +891,7 @@ h2.art-logo-text a:hover
 {
   width: 38px;
   height: 38px;
-  background-image: url('images/vmenublock_s.png');
+  background-image: url('../images/vmenublock_s.png');
 }
 
 .art-vmenublock-tl
@@ -927,7 +927,7 @@ h2.art-logo-text a:hover
   left: 19px;
   right: 19px;
   height: 38px;
-  background-image: url('images/vmenublock_h.png');
+  background-image: url('../images/vmenublock_h.png');
 }
 
 .art-vmenublock-tc
@@ -947,7 +947,7 @@ h2.art-logo-text a:hover
   top: 19px;
   bottom: 19px;
   width: 38px;
-  background-image: url('images/vmenublock_v.png');
+  background-image: url('../images/vmenublock_v.png');
 }
 
 .art-vmenublock-cr
@@ -1013,7 +1013,7 @@ h2.art-logo-text a:hover
 {
   position: absolute;
   height: 37px;
-  background-image: url('images/vmenublockheader.png');
+  background-image: url('../images/vmenublockheader.png');
 }
 
 .art-vmenublockheader .l
@@ -1110,7 +1110,7 @@ ul.art-vmenu a .r, ul.art-vmenu a .l
   display: block;
   top: 0;
   height: 118px;
-  background-image: url('images/vmenuitem.png');
+  background-image: url('../images/vmenuitem.png');
 }
 
 ul.art-vmenu a .l
@@ -1194,7 +1194,7 @@ ul.art-vmenu a:hover .t
 {
   width: 38px;
   height: 38px;
-  background-image: url('images/block_s.png');
+  background-image: url('../images/block_s.png');
 }
 
 .art-block-tl
@@ -1230,7 +1230,7 @@ ul.art-vmenu a:hover .t
   left: 19px;
   right: 19px;
   height: 38px;
-  background-image: url('images/block_h.png');
+  background-image: url('../images/block_h.png');
 }
 
 .art-block-tc
@@ -1250,7 +1250,7 @@ ul.art-vmenu a:hover .t
   top: 19px;
   bottom: 19px;
   width: 38px;
-  background-image: url('images/block_v.png');
+  background-image: url('../images/block_v.png');
 }
 
 .art-block-cr
@@ -1325,7 +1325,7 @@ div.art-block img
 {
   position: absolute;
   height: 37px;
-  background-image: url('images/blockheader.png');
+  background-image: url('../images/blockheader.png');
 }
 
 .art-blockheader .l
@@ -1402,7 +1402,7 @@ div.art-block img
   color: #545454;
   margin: 0 0 0 12px;
   padding: 0 0 0 12px;
-  background-image: url('images/blockcontentbullets.png');
+  background-image: url('../images/blockcontentbullets.png');
   background-repeat: no-repeat;
 }/* end Box, BlockContent */
 
@@ -1496,7 +1496,7 @@ input, select, textarea
   height: 91px;
   margin: 0;
   padding: 0;
-  background-image: url('images/button.png');
+  background-image: url('../images/button.png');
 }
 
 .art-button-wrapper .art-button-l
@@ -1700,7 +1700,7 @@ h2.art-postheader a:hover,  h2.art-postheader a.hovered
 
 .art-post ul>li
 {
-  background-image: url('images/postbullets.png');
+  background-image: url('../images/postbullets.png');
   background-repeat: no-repeat;
   padding-left: 12px;
   /* makes "ul li" not to align behind the image if they are in the same line */
@@ -1734,7 +1734,7 @@ h2.art-postheader a:hover,  h2.art-postheader a.hovered
   margin: 10px 10px 10px 50px;
   padding: 4px 4px 4px 41px;
   background-color: #DBDBDB;
-  background-image: url('images/postquote.png');
+  background-image: url('../images/postquote.png');
   background-position: left top;
   background-repeat: no-repeat;
   /* makes blockquote not to align behind the image if they are in the same line */
@@ -1810,14 +1810,14 @@ h2.art-postheader a:hover,  h2.art-postheader a.hovered
   right:20px;
   bottom:0;
   height:50px;
-  background-image: url('images/footer_b.png');
+  background-image: url('../images/footer_b.png');
 }
 
 .art-footer-r, .art-footer-l
 {
   position: absolute;
   height:50px;
-  background-image: url('images/footer_s.png');
+  background-image: url('../images/footer_s.png');
   bottom: 0;
 }
 
@@ -1861,7 +1861,7 @@ h2.art-postheader a:hover,  h2.art-postheader a.hovered
 .art-rss-tag-icon
 {
   display: block;
-  background-image: url('images/rssicon.png');
+  background-image: url('../images/rssicon.png');
   background-position: center right;
   background-repeat: no-repeat;
   height: 25px;
@@ -1987,7 +1987,7 @@ div.art-footer img
 	font-size: 13px;
 	font-weight: normal;
 	padding: 8px;
-	background: #b9c9fe url('table-images/gradhead.png') repeat-x;
+	background: #b9c9fe url('table-../images/gradhead.png') repeat-x;
 	border-top: 2px solid #d3ddff;
 	border-bottom: 1px solid #fff;
 	color: #039;
@@ -2000,7 +2000,7 @@ div.art-footer img
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid #fff;
-	background: #e8edff url('table-images/gradback.png') repeat-x;
+	background: #e8edff url('table-../images/gradback.png') repeat-x;
 	border-right: 0px solid #fff;
 	border-left: 0px solid #fff;
 	
@@ -2015,7 +2015,7 @@ div.art-footer img
 }
 #gradient-style tbody tr:hover td
 {
-	background: #d0dafd url('table-images/gradhover.png') repeat-x;
+	background: #d0dafd url('table-../images/gradhover.png') repeat-x;
 	color: #339;
 }
 

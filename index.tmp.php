@@ -15,7 +15,7 @@
 #                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-echo "Nothing to see yet.";
+include()
 
 exit();
 ?>
