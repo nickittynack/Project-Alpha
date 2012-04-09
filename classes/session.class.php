@@ -36,5 +36,13 @@ class session {
             return false;
         }
     }
+
+    public function set_user_type(user){
+        if(user == "ADMIN" || user == "POLICE" || user == "COURT"){
+            $_SESSION["user_type"] = user;
+        } else {
+            die("<b>Error:</b> Not a valid user type.");
+        }
+    }
 }
 ?>
