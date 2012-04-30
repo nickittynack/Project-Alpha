@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                             #
+#                       Project Alpha                         #
+#                                                             #
+# This file is part of Project Alpha, a PHP rewrite of the    #
+# NSWJLPS system. This project is designed to run on any      #
+# standard implementation of PHP with SQLite.                 #
+#                                                             #
+# Do not copy or distribute any portion of this file without  #
+# permission from the original authors.                       #
+#                                                             #
+# Copyright 2012 Benjamin Civitico, Blair Hudson, Nicholas    #
+# Reynolds & Anthony Wales.                                   #
+#                                                             #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+*/
+
+body {
+	background-color: #82bede;
+}
+/*allignment for the hole document*/
+#center {
+	background:#FFF;
+	-moz-box-shadow: 0 0 5px #328dbd;
+	-webkit-box-shadow: 0 0 5px#328dbd;
+	box-shadow: 0 0 5px #328dbd;
+	margin: -9px auto;
+	width: 992px;
+	height: auto;
+	border-radius: 17px;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+}
+/*image header*/
+#header {
+	margin: auto;
+	height: 125px;
+	width: auto;
+	background-image: url(../images/newHeader3.png);
+}
+/*Top navigation bar styles*/
+#navigation {
+	height: 27px;
+	width: auto;
+	padding-left: 20px;
+	padding-top: 2px;
+	background-image: url(../images/nav.png);
+}
+
+#navigation a{
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ 	line-height:30px;
+ 	padding-left: 15px;
+  	color: #1A1A1A;
+  	text-decoration: none;
+ 	letter-spacing: normal;
+ 	text-transform: uppercase;
+}
+/*The container for the side navigation and for the content*/
+#container {
+	height: auto;
+	width: auto;
+}
+/*Side Nav Styles*/
+#sidenav {
+	width: 236px;
+	-moz-box-shadow: 0 0 5px #328dbd;
+	-webkit-box-shadow: 0 0 5px#328dbd;
+	box-shadow: 0 0 5px #328dbd;
+	margin: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+	text-decoration: none;
+	line-height: 0px;
+	background-color: #d4e9ff;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+/*Sidenav links styles. inherits from above*/
+#sidenav a {
+ 	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+ 	font-style: normal;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ 	line-height:30px;
+  	color: #1A1A1A;
+  	text-decoration: none;
+ 	letter-spacing: normal;
+ 	text-transform: uppercase;
+}
+/*sidenav heading*/
+#sidenav h1 {
+	background-image: url(../images/side_nav_header.png);
+	background-repeat: no-repeat;
+  	color: #1A1A1A;
+  	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+  	font-size: 13px;
+  	letter-spacing: normal;
+  	text-transform: uppercase;
+  	white-space: nowrap;
+  	line-height: 37px;
+  	text-align: center;
+}
+/*Content styles*/
+#content {
+	width: 650px;
+	margin: 20px;
+	float: left;
+}
+/*content headings*/
+#content h1 {
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #25698D;
+	font-style: normal;
+  	font-weight: bold;
+  	font-size: 24px;
+  	text-align: left;
+  	text-decoration: none;
+  	letter-spacing: 3px;
+}
+/*footer to close off the content*/
+#footer {
+	background-color:#cccccc;
+	height: 60px;
+	width: auto;
+	clear: both;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	text-align: center;
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+ 	font-style: normal;
+ 	font-size: 12px;
+ 	line-height:30px;
+  	color: #1A1A1A;
+}

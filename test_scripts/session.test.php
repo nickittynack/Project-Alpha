@@ -20,13 +20,11 @@
 
 include("../classes/session.class.php"); # Include the class
 
-$session = new session(); # Create a new session object
-
 if($session->authd()){ # Returns a true/false if logged in
 	$session->logout(); # End the session, set authd to false
 	echo "You logged out, refresh the page to log in.";
 } else {
-	$session->login(); # Set authd to true
+	$session->login("111111","123qwe"); # Set authd to true
 	echo "You are logged in, refresh the page to log out.";
 }
 ?>

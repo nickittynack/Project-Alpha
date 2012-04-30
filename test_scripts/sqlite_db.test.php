@@ -17,12 +17,9 @@
 
 # This file demonstrates how to use sqlite_db.class.php to
 # return the data within an entire table.
+include("../config.php");
+include($config["classes"] . "sqlite_db.class.php"); # Include the class
 
-include("../classes/sqlite_db.class.php"); # Include the class
-
-$path = "../nswjlps.sqlite"; # Path of the database to use
-$db = new sqlite_db($path); # Create a new database object
-$db->connect(); # Connect to the database
 $db->dump_all_tables(); # Dump the entire database
 
 /*

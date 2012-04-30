@@ -15,6 +15,8 @@
 #                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+$db = new sqlite_db($config["db_file"]);
+
 class sqlite_db {
     private $path = null;
     private $db = null;
@@ -24,6 +26,7 @@ class sqlite_db {
         if(!$this->does_exist()){
             die("<b>Error:</b> The database does not exist.");
         }
+        $this->connect();
     }
 
     private function does_exist(){
@@ -52,6 +55,11 @@ class sqlite_db {
         $query = $db->query($q);
         $result = $query->fetchall(PDO::FETCH_ASSOC);
         return $result;
+    }
+
+    public function execute($q){
+        $db = $this->db;
+        $query = $db->exec($q);
     }
 
     public function tables(){

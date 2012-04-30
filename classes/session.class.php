@@ -15,6 +15,8 @@
 #                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+$session = new session();
+
 class session {
     public function __construct(){
         session_start();
@@ -37,12 +39,39 @@ class session {
         }
     }
 
-    public function set_user_type(user){
-        if(user == "ADMIN" || user == "POLICE" || user == "COURT"){
-            $_SESSION["user_type"] = user;
+    public function set_user_type($user){
+        if($user == "ADMIN" or $user == "POLICE" or $user == "COURT"){
+            $_SESSION["user_type"] = $user;
         } else {
-            die("<b>Error:</b> Not a valid user type.");
+            die("<b>Error</b> Not a valid user type.");
         }
     }
+
+    public function get_user_type(){
+        if(isset($_SESSION["user_type"])){
+            return $_SESSION["user_type"];
+        } else {
+            $this->set_user_type("ADMIN");
+            echo "No user type. Defaulting to ADMIN.";
+            #die("<b>Error:</b> User type is not set.");
+        }
+    }
+
+    public function set_user_id($id){
+        if(strlen($id) == 6){
+            $_SESSION["user_id"] = $id;
+        } else {
+            die("<b>Error</b> Not a valid user ID.");
+        }
+    }
+
+    public function get_user_id(){
+        if(isset($_SESSION["user_id"])){
+            return $_SESSION["user_id"];
+        } else {
+            die("<b>Error:</b> User type is not set.");
+        }
+    }
+
 }
 ?>

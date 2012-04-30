@@ -15,41 +15,33 @@
 #                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# Base directory of installation.
-$base = "/ISYS254/";
-
-$config = array(
-# The path to the SQLite DB.
-"db_file" => "nswjlps.sqlite",
-
-# The path to the page templates.
-"templates" => "page_template/",
-
-# The path where all uploaded images are stored.
-"uploads" => "page_resources/uploads/",
-
-# The path for storing all CSS files.
-"css" => "page_resources/css/",
-
-# The path for storing all UI images.
-"images" => "page_resources/images/",
-
-# The directory for storing all JavaScript files.
-"js" => "page_resources/js/",
-
-# Directory for storing PHP classes.
-"classes" => "classes/",
-
-# Directory for storing PHP function scripts.
-"functions" => "functions/",
-);
-
-# # # # # # # # # # # # # # # #
-# DO NOT EDIT BELOW THIS LINE #
-# # # # # # # # # # # # # # # #
-$base = $_SERVER["DOCUMENT_ROOT"] . $base;
-foreach($config as $key=>$path){
-	$config[$key] = $base . $path;
+if(isset($_REQUEST["employee_id"])){
+  $query = $db->query("SELECT COUNT(*) FROM Employee WHERE EmployeeID = '" . $_REQUEST["employee_id"] . "'");
+  if($query[0]["COUNT(*)"] != 0){
+    $db->execute("UPDATE Employee SET passwd = '" . md5("123changeme") . "' WHERE EmployeeID = '" . $_REQUEST["employee_id"] . "'");
+    echo "Password for Employee ID: " . $_REQUEST["employee_id"] . " has been reset to '123changeme'.";
+  } else {
+    echo "Employee ID doesn't exist.";
+  }
 }
 
 ?>
+
+<h1>Reset User Password</h1>
+<p>Resets a users password</p>
+<form method="post" action="index.php?p=reset_password">
+  <table border="0">
+    <tr>
+      <td>Employee ID</td>
+      <td><label>
+        <input type="text" name="employee_id" id="employee_id">
+      </label></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><label>
+        <input type="submit" name="submit" id="submit" value="Reset Password">
+      </label></td>
+    </tr>
+  </table>
+</form>
